@@ -1,5 +1,6 @@
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const dev = process.env.NODE_ENV;
+console.log(dev);
 module.exports = {
     rules:[
         {

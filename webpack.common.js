@@ -4,7 +4,9 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 module.exports = {
-    entry:"./index.js",
+    entry:{
+        index:'./src/js/index.js'
+    },
     output:{
         path:path.join(__dirname,'dist'),
         // filename:'[hash:6].js',
@@ -15,7 +17,7 @@ module.exports = {
         new CleanWebpackPlugin(["dist"]),
         new HtmlWebpackPlugin({
             title:"哈哈哈啊",
-            template:'./index.html'
+            template:'./src/index.html'
         })
     ]
 }
